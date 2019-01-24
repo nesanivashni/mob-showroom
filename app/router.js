@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('samsung');
+  this.route('nokia');
+  this.route('apple');
 });
 
 export default Router;
