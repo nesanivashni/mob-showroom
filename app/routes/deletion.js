@@ -14,6 +14,7 @@ export default Route.extend({
       this.store.unloadRecord(dltrec);
       //dltrec.deleteRecord();
       console.log(dltrec.isDeleted);
+      alert('Mobile Rate deleted successfully');
       /*store.findRecord('post', 1).then(function(post) {
   store.unloadRecord(post);
 });*/

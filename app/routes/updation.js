@@ -12,7 +12,7 @@ export default Route.extend({
       console.log(dltrec);
       console.log(mbrt);
       dltrec.set('rate',mbrt);
-
+      alert('Mobile Rate Updated successfully as '+mbrt);
       //this.store.unloadRecord(dltrec);
       //dltrec.deleteRecord();
       //console.log(dltrec.isDeleted);

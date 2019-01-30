@@ -28,6 +28,7 @@ export default Route.extend({
          launch_date:this.get('controller').get('date'),
          description:this.get('controller').get('desc')
       });
+      alert('Mobile Entry Added successfully');
       //alert(mob_id);
       // let tempObj = this.store.peekRecord('mobiles', '1');
       // console.log(tempObj);
