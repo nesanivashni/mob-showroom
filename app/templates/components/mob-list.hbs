@@ -1,11 +1,28 @@
   <article class="listing">
     <div class="details">
-      <h2>{{list.brand}}</h2>
-      <div class="detail owner">
+      <h2>{{list.brand}} {{list.mob_ver}}</h2>
+      <a onclick={{action "toggleImageSize"}} class="image {{if this.isWide "wide"}}" role="button">
+        <img src={{list.img}}>
+      </a>
+      <div>
+        <span>Mobile ID:</span> {{list.id}}
+      </div>
+      <div class="rating">
         <span>Rating:</span> {{list.rating}}
       </div>
-      <div class="detail type">
+      <div class="rate">
         <span>Rate: Rs.</span> {{list.rate}}
       </div>
+      {{#if list.launch_date}}
+         <span>Launch-date: </span> {{list.launch_date}}
+         <br>
+      {{/if}}
+      {{#if list.cam_avl}}
+          <span>Camera:</span>{{list.cam_avl}}
+          <br><span>Pixels:</span>{{list.pixel}}
+      {{else if this.list.cam_pres}}
+          <span>Camera:</span>{{list.cam_pres}}
+      {{/if}}
+      <br>
     </div>
   </article>

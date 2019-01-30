@@ -1,0 +1,10 @@
+<a {{action "viewValues"}}>New Arrivals</a>
+{{#each this.mob_list_arr as |details|}}
+  {{mob-list list= details}}
+{{/each}}
+<br>
+<button {{action "delete"}}>Delete New Arrivals</button>
+<br>
+<br>
+<button {{action "update"}}>Update New Arrivals</button>
+<br>

@@ -11,6 +11,10 @@ Router.map(function() {
   this.route('samsung');
   this.route('nokia');
   this.route('apple');
+  this.route('addentry');
+  this.route('view');
+  this.route('deletion');
+  this.route('updation');
 });
 
 export default Router;

@@ -1,0 +1,30 @@
+<form>
+  <label>Model Id</label>
+  {{input type="text" placeholder="Enter id" value=mob-id}}
+  <br>
+  <label>Brand</label>
+  {{input type="text" placeholder="Enter brand name" value=brnd}}
+  <br>
+  <label>Img-link</label>
+  {{input type="text" placeholder="Enter image link" value=lnk}}
+  <br>
+  <label>Model name</label>
+  {{input type="text" placeholder="Model Name" value=name}}
+  <br>
+  <label>Type</label>
+  {{input type="text" placeholder="IoS/Basic/Android" value=type}}
+  <br>
+  <label>rate</label>
+  {{input type="text" placeholder="Price in INR" value=rate}}
+  <br>
+  <label>rating</label>
+  {{input type="text" placeholder="Enter rating out of 10" value=rating}}
+  <br>
+  <label>launch date</label>
+  {{input type="text" placeholder="DD/MM/YYYY" value=date}}
+  <br>
+  <label>description</label>
+  {{input type="text" placeholder="Description" value=desc}}
+  <br>
+  <button {{action "insertValues"}} value="Submit" id="btnsubmit">Submit</button>
+</form>

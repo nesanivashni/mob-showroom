@@ -1,0 +1,11 @@
+<form>
+  <label class="notif">* Please enter the Mobile Rate and its corresponding mobile ID to update the rate</label>
+  <br>
+  <label>Mobile-Id</label>
+    {{input type="text" placeholder="Enter mobile-id" value=mobid}}
+  <br>
+  <label>Mobile-Rate</label>
+    {{input type="text" placeholder="Enter mobile-id" value=mobrt}}
+  <br>
+  <button {{action "updatearrival"}} value="Submit" id="submitbtn">Update mobile details</button>
+</form>
